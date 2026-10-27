@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NeuroBot | ANN-Powered AI Assistant</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="brand">
+
+            <div class="bot-icon">
+                🧠
+            </div>
+
+            <div>
+                <h1>NeuroBot</h1>
+                <p>ANN-Powered AI Learning Assistant</p>
+            </div>
+
+        </div>
+
+        <div class="online-status">
+            <span class="status-dot"></span>
+            ANN Online
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="panel">
+
+                <h3>🧠 Model Overview</h3>
+
+                <div class="model-item">
+                    <span>Architecture</span>
+                    <strong>ANN / MLP</strong>
+                </div>
+
+                <div class="model-item">
+                    <span>Text Processing</span>
+                    <strong>Bag of Words</strong>
+                </div>
+
+                <div class="model-item">
+                    <span>Task</span>
+                    <strong>Intent Classification</strong>
+                </div>
+
+                <div class="model-item">
+                    <span>Domain</span>
+                    <strong>AI + EWU</strong>
+                </div>
+
+            </div>
+
+
+            <div class="panel pipeline">
+
+                <h3>⚡ How NeuroBot Thinks</h3>
+
+                <div class="pipeline-step">
+                    <span>01</span>
+                    User Text
+                </div>
+
+                <div class="arrow">↓</div>
+
+                <div class="pipeline-step">
+                    <span>02</span>
+                    Bag of Words
+                </div>
+
+                <div class="arrow">↓</div>
+
+                <div class="pipeline-step">
+                    <span>03</span>
+                    ANN
+                </div>
+
+                <div class="arrow">↓</div>
+
+                <div class="pipeline-step">
+                    <span>04</span>
+                    Intent
+                </div>
+
+                <div class="arrow">↓</div>
+
+                <div class="pipeline-step">
+                    <span>05</span>
+                    Response
+                </div>
+
+            </div>
+
+
+            <div class="panel about">
+
+                <h3>🎓 Knowledge Base</h3>
+
+                <p>
+                    NeuroBot is trained to answer questions
+                    about Artificial Intelligence, ANN, NLP,
+                    machine learning concepts and East West
+                    University.
+                </p>
+
+            </div>
+
+        </aside>
+
+
+        <!-- CHAT SECTION -->
+
+        <section class="chat-section">
+
+            <!-- CHAT HEADER -->
+
+            <div class="chat-header">
+
+                <div>
+
+                    <h2>NeuroBot Assistant</h2>
+
+                    <p>
+                        Ask a question and let the neural network
+                        identify your intent.
+                    </p>
+
+                </div>
+
+                <div class="brain-status">
+                    ● Ready
+                </div>
+
+            </div>
+
+
+            <!-- CHAT AREA -->
+
+            <div class="chat-box" id="chatBox">
+
+                <div class="message bot">
+
+                    <div class="avatar">
+                        🧠
+                    </div>
+
+                    <div class="message-content">
+
+                        <div class="bubble">
+
+                            <strong>Hello! I'm NeuroBot.</strong>
+
+                            <br><br>
+
+                            I'm an ANN-powered learning assistant.
+                            Ask me about:
+
+                            <ul>
+                                <li>Artificial Intelligence</li>
+                                <li>Artificial Neural Networks</li>
+                                <li>NLP</li>
+                                <li>Backpropagation</li>
+                                <li>Activation Functions</li>
+                                <li>Machine Learning</li>
+                                <li>East West University</li>
+                            </ul>
+
+                            Try asking me something!
+
+                        </div>
+
+                        <div class="time">
+                            NeuroBot • Ready
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TYPING INDICATOR -->
+
+            <div id="typing" class="typing hidden">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+                NeuroBot is thinking...
+
+            </div>
+
+
+            <!-- INPUT -->
+
+            <div class="input-area">
+
+                <input
+                    type="text"
+                    id="messageInput"
+                    placeholder="Ask NeuroBot something..."
+                    autocomplete="off"
+                >
+
+                <button onclick="sendMessage()">
+                    Send ➤
+                </button>
+
+            </div>
+
+
+            <!-- QUICK QUESTIONS -->
+
+            <div class="examples">
+
+                <span>Try asking:</span>
+
+                <button onclick="quickMessage('What is ANN?')">
+                    🧠 What is ANN?
+                </button>
+
+                <button onclick="quickMessage('Explain backpropagation')">
+                    🔄 Backpropagation
+                </button>
+
+                <button onclick="quickMessage('What is NLP?')">
+                    💬 NLP
+                </button>
+
+                <button onclick="quickMessage('What is overfitting?')">
+                    📊 Overfitting
+                </button>
+
+                <button onclick="quickMessage('Does EWU have career counseling?')">
+                    🎓 EWU Career
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
