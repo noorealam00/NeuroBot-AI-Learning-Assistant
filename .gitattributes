@@ -1,0 +1,6 @@
+# Hide CSS from language statistics
+*.css linguist-detectable=false
+
+# Ensure other files (like Python or JavaScript) are tracked
+*.py linguist-detectable=true
+*.js linguist-detectable=true
