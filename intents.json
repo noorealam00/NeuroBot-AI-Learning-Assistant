@@ -1,0 +1,1038 @@
+{
+  "intents": [
+
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Hi there",
+        "Hello there",
+        "Good morning",
+        "Good afternoon",
+        "Good evening",
+        "Is anyone there?",
+        "Are you there?",
+        "Can I talk to you?",
+        "Hey NeuroBot",
+        "Hello NeuroBot",
+        "Hi NeuroBot",
+        "What's up?"
+      ],
+      "responses": [
+        "Hello! I'm NeuroBot. How can I help you?",
+        "Hi! Ask me something about AI, machine learning, or EWU.",
+        "Hello! I'm ready to answer your questions.",
+        "Hey! What would you like to learn today?"
+      ]
+    },
+
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you later",
+        "I have to go",
+        "Talk to you later",
+        "See you again",
+        "I'm leaving",
+        "Good night",
+        "Bye NeuroBot"
+      ],
+      "responses": [
+        "Goodbye! Have a great day.",
+        "See you again!",
+        "Take care! Good luck with your studies."
+      ]
+    },
+
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thank you",
+        "Thanks",
+        "That's helpful",
+        "Thank you very much",
+        "Thanks a lot",
+        "That helped me",
+        "I appreciate it",
+        "Thanks NeuroBot",
+        "That was useful",
+        "Great, thank you"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Happy to help!",
+        "Glad I could help!",
+        "Anytime!"
+      ]
+    },
+
+    {
+      "tag": "ai",
+      "patterns": [
+        "What is AI?",
+        "What is artificial intelligence?",
+        "Explain artificial intelligence",
+        "What does AI mean?",
+        "Tell me about AI",
+        "How does artificial intelligence work?",
+        "Why is AI important?",
+        "What can AI do?",
+        "What are examples of AI?",
+        "Where is AI used?",
+        "Explain AI to me",
+        "What is the purpose of artificial intelligence?"
+      ],
+      "responses": [
+        "Artificial Intelligence is the field of computing focused on creating systems that can learn, reason, make predictions, and perform tasks that normally require human intelligence.",
+        "AI enables computers to perform tasks such as learning from data, recognizing patterns, making predictions, and supporting decision-making."
+      ]
+    },
+
+    {
+      "tag": "machine_learning",
+      "patterns": [
+        "What is machine learning?",
+        "Explain machine learning",
+        "What does ML mean?",
+        "How does machine learning work?",
+        "Why is machine learning important?",
+        "What are machine learning models?",
+        "How does a machine learn?",
+        "What is ML?",
+        "Explain ML",
+        "What is the difference between AI and ML?"
+      ],
+      "responses": [
+        "Machine learning is a branch of AI where systems learn patterns from data and use those patterns to make predictions or decisions.",
+        "Machine learning allows computers to learn from examples instead of being explicitly programmed for every possible situation."
+      ]
+    },
+
+    {
+      "tag": "ann",
+      "patterns": [
+        "What is ANN?",
+        "What does ANN stand for?",
+        "What is an artificial neural network?",
+        "Explain artificial neural network",
+        "Explain ANN",
+        "Tell me about neural networks",
+        "How does ANN work?",
+        "How do artificial neural networks work?",
+        "What are neural networks?",
+        "Why are neural networks used?",
+        "Why do we use ANN?",
+        "What are the components of an ANN?",
+        "What is a neural network model?",
+        "How does a neural network learn?",
+        "What are neurons in ANN?",
+        "What is a node in a neural network?",
+        "Tell me about ANN",
+        "How does an artificial neural network learn?"
+      ],
+      "responses": [
+        "An Artificial Neural Network is a machine learning model inspired by interconnected neurons. It learns patterns by adjusting weights during training.",
+        "An ANN consists of connected nodes organized into layers. During training, the network adjusts its weights to learn patterns from data.",
+        "An Artificial Neural Network learns a mapping between inputs and outputs by passing information through layers and updating its weights."
+      ]
+    },
+
+    {
+      "tag": "neuron",
+      "patterns": [
+        "What is a neuron?",
+        "What is an artificial neuron?",
+        "Explain a neuron in ANN",
+        "How does an artificial neuron work?",
+        "What does a neuron do?",
+        "What is a node in ANN?",
+        "How does a neural network neuron calculate output?",
+        "What are neurons?",
+        "What is a neural network node?"
+      ],
+      "responses": [
+        "An artificial neuron receives inputs, multiplies them by weights, adds a bias, and passes the result through an activation function.",
+        "A neuron is a basic processing unit of a neural network. It combines inputs using weights and bias before producing an output."
+      ]
+    },
+
+    {
+      "tag": "layers",
+      "patterns": [
+        "What are layers in ANN?",
+        "What is an input layer?",
+        "What is a hidden layer?",
+        "What is an output layer?",
+        "Explain neural network layers",
+        "How many layers does an ANN have?",
+        "What does the hidden layer do?",
+        "What is the purpose of the output layer?",
+        "Explain input hidden and output layers"
+      ],
+      "responses": [
+        "Neural networks commonly contain an input layer, one or more hidden layers, and an output layer. Each layer transforms information before passing it forward."
+      ]
+    },
+
+    {
+      "tag": "weights_bias",
+      "patterns": [
+        "What are weights in ANN?",
+        "What is a neural network weight?",
+        "What is bias in ANN?",
+        "Why are weights important?",
+        "Why do neural networks use bias?",
+        "Explain weights and bias",
+        "How are weights updated?",
+        "What do weights represent?",
+        "How do weights affect ANN?"
+      ],
+      "responses": [
+        "Weights determine how strongly inputs influence a neuron, while bias shifts the neuron's output. Training adjusts these values to improve predictions."
+      ]
+    },
+
+    {
+      "tag": "backpropagation",
+      "patterns": [
+        "What is backpropagation?",
+        "Explain backpropagation",
+        "How does backpropagation work?",
+        "What is back propagation?",
+        "Why is backpropagation used?",
+        "Explain back propagation",
+        "How does ANN learn from errors?",
+        "How are neural network errors corrected?",
+        "How does a neural network update weights?",
+        "What happens during backpropagation?",
+        "Why do we need backpropagation?"
+      ],
+      "responses": [
+        "Backpropagation calculates how much each network weight contributed to the error and uses that information to update the weights.",
+        "Backpropagation sends the prediction error backward through the network so the weights can be adjusted to improve future predictions.",
+        "Backpropagation works with an optimization method to calculate useful weight updates based on the model's error."
+      ]
+    },
+
+    {
+      "tag": "activation_function",
+      "patterns": [
+        "What is an activation function?",
+        "Explain activation function",
+        "Why do we need activation functions?",
+        "What is ReLU?",
+        "What is sigmoid?",
+        "What is tanh?",
+        "Tell me about activation functions",
+        "Why is ReLU used?",
+        "Why do neural networks need nonlinear activation?",
+        "Which activation functions are commonly used?"
+      ],
+      "responses": [
+        "An activation function introduces non-linearity into a neural network. ReLU, sigmoid, and tanh are common examples.",
+        "Activation functions determine how a neuron transforms its input. They allow neural networks to learn more complex patterns."
+      ]
+    },
+
+    {
+      "tag": "relu",
+      "patterns": [
+        "What is ReLU?",
+        "Explain ReLU",
+        "Why is ReLU popular?",
+        "How does ReLU work?",
+        "What does ReLU stand for?",
+        "Why use ReLU in neural networks?",
+        "Is ReLU an activation function?"
+      ],
+      "responses": [
+        "ReLU stands for Rectified Linear Unit. It outputs zero for negative inputs and keeps positive inputs unchanged. It is widely used in neural network hidden layers."
+      ]
+    },
+
+    {
+      "tag": "sigmoid",
+      "patterns": [
+        "What is sigmoid?",
+        "Explain sigmoid activation",
+        "How does sigmoid work?",
+        "When is sigmoid used?",
+        "Is sigmoid an activation function?",
+        "What range does sigmoid produce?"
+      ],
+      "responses": [
+        "Sigmoid is an activation function that maps values to a range between 0 and 1. It is often useful when an output can be interpreted as a probability."
+      ]
+    },
+
+    {
+      "tag": "optimizer",
+      "patterns": [
+        "What is an optimizer?",
+        "Explain optimizer",
+        "What does an optimizer do?",
+        "Why do we use optimizers?",
+        "What is Adam optimizer?",
+        "Explain Adam",
+        "How does an optimizer work?",
+        "Why are optimizers needed?",
+        "How does Adam update weights?"
+      ],
+      "responses": [
+        "An optimizer updates the neural network's weights to reduce the loss during training. Adam is a commonly used optimizer.",
+        "An optimizer determines how model parameters should be changed during training to reduce the error."
+      ]
+    },
+
+    {
+      "tag": "gradient_descent",
+      "patterns": [
+        "What is gradient descent?",
+        "Explain gradient descent",
+        "How does gradient descent work?",
+        "Why is gradient descent used?",
+        "What is the purpose of gradient descent?",
+        "How does gradient descent minimize error?"
+      ],
+      "responses": [
+        "Gradient descent is an optimization method that adjusts model parameters in a direction that reduces the loss."
+      ]
+    },
+
+    {
+      "tag": "loss_function",
+      "patterns": [
+        "What is a loss function?",
+        "Explain loss function",
+        "Why do we need loss?",
+        "What is model loss?",
+        "What does loss mean?",
+        "Why is loss important?",
+        "How is loss calculated?",
+        "What does low loss mean?"
+      ],
+      "responses": [
+        "A loss function measures how different the model's prediction is from the correct answer. During training, the model tries to minimize this loss."
+      ]
+    },
+
+    {
+      "tag": "epoch",
+      "patterns": [
+        "What is an epoch?",
+        "Explain epoch in machine learning",
+        "What does one epoch mean?",
+        "How many epochs should I use?",
+        "Why do we use epochs?",
+        "What happens during an epoch?"
+      ],
+      "responses": [
+        "An epoch represents one complete pass through the training dataset. Multiple epochs allow the model to repeatedly learn from the training examples."
+      ]
+    },
+
+    {
+      "tag": "batch_size",
+      "patterns": [
+        "What is batch size?",
+        "Explain batch size",
+        "What does batch size mean?",
+        "Why do we use batches?",
+        "How does batch size affect training?",
+        "What is a training batch?"
+      ],
+      "responses": [
+        "Batch size is the number of training examples processed before the model updates its parameters."
+      ]
+    },
+
+    {
+      "tag": "learning_rate",
+      "patterns": [
+        "What is learning rate?",
+        "Explain learning rate",
+        "Why is learning rate important?",
+        "What happens if learning rate is too high?",
+        "What happens if learning rate is too low?",
+        "How does learning rate affect training?"
+      ],
+      "responses": [
+        "The learning rate controls how large the model's parameter updates are during training. A suitable value helps the model learn efficiently."
+      ]
+    },
+
+    {
+      "tag": "overfitting",
+      "patterns": [
+        "What is overfitting?",
+        "Explain overfitting",
+        "What happens during overfitting?",
+        "How can we identify overfitting?",
+        "How do we prevent overfitting?",
+        "Why does overfitting happen?",
+        "Why does a model memorize training data?",
+        "What is a model that performs well only on training data?"
+      ],
+      "responses": [
+        "Overfitting happens when a model learns the training examples too closely and performs poorly on new, unseen data.",
+        "An overfitted model may have strong training performance but weak generalization to new examples."
+      ]
+    },
+
+    {
+      "tag": "underfitting",
+      "patterns": [
+        "What is underfitting?",
+        "Explain underfitting",
+        "What happens when a model underfits?",
+        "How can underfitting be fixed?",
+        "Why does underfitting happen?",
+        "What is the opposite of overfitting?"
+      ],
+      "responses": [
+        "Underfitting occurs when a model is too simple or insufficiently trained to capture important patterns in the data."
+      ]
+    },
+
+    {
+      "tag": "training_testing",
+      "patterns": [
+        "What is training data?",
+        "What is testing data?",
+        "Why split data into training and testing?",
+        "What is a training set?",
+        "What is a test set?",
+        "Why do we test a machine learning model?",
+        "What is the difference between training and testing?"
+      ],
+      "responses": [
+        "Training data is used to learn model parameters, while testing data is used to evaluate how well the trained model performs on unseen examples."
+      ]
+    },
+
+    {
+      "tag": "supervised_learning",
+      "patterns": [
+        "What is supervised learning?",
+        "Explain supervised learning",
+        "What is supervised machine learning?",
+        "How does supervised learning work?",
+        "Give me an example of supervised learning",
+        "Does classification use supervised learning?"
+      ],
+      "responses": [
+        "Supervised learning trains a model using examples that contain both inputs and their expected outputs."
+      ]
+    },
+
+    {
+      "tag": "unsupervised_learning",
+      "patterns": [
+        "What is unsupervised learning?",
+        "Explain unsupervised learning",
+        "How does unsupervised learning work?",
+        "What is clustering?",
+        "Does unsupervised learning use labels?",
+        "Give me an example of unsupervised learning"
+      ],
+      "responses": [
+        "Unsupervised learning finds patterns or structures in data without using predefined output labels. Clustering is a common example."
+      ]
+    },
+
+    {
+      "tag": "classification",
+      "patterns": [
+        "What is classification?",
+        "Explain classification in machine learning",
+        "What is a classification problem?",
+        "How does classification work?",
+        "Is intent prediction classification?",
+        "What is text classification?"
+      ],
+      "responses": [
+        "Classification assigns an input to one of several predefined categories. NeuroBot uses classification to predict the user's intent."
+      ]
+    },
+
+    {
+      "tag": "regression",
+      "patterns": [
+        "What is regression?",
+        "Explain regression",
+        "What is regression in machine learning?",
+        "How is regression different from classification?",
+        "When is regression used?"
+      ],
+      "responses": [
+        "Regression predicts a continuous numerical value, such as a price or temperature, rather than choosing a category."
+      ]
+    },
+
+    {
+      "tag": "dataset",
+      "patterns": [
+        "What is a dataset?",
+        "Explain dataset",
+        "Why is a dataset important?",
+        "What makes a good machine learning dataset?",
+        "Why do we need many training examples?",
+        "What is training data?"
+      ],
+      "responses": [
+        "A dataset is a collection of examples used to train, validate, or test a machine learning model. Good datasets should contain relevant and varied examples."
+      ]
+    },
+
+    {
+      "tag": "nlp",
+      "patterns": [
+        "What is NLP?",
+        "Explain natural language processing",
+        "What does NLP mean?",
+        "How is NLP used in this chatbot?",
+        "Why do we need NLP?",
+        "What is natural language processing?",
+        "How do computers understand text?",
+        "How can AI process human language?"
+      ],
+      "responses": [
+        "NLP stands for Natural Language Processing. It helps computers process human language. In NeuroBot, NLP helps convert user text into numerical features for the ANN."
+      ]
+    },
+
+    {
+      "tag": "bag_of_words",
+      "patterns": [
+        "What is Bag of Words?",
+        "Explain Bag of Words",
+        "How does Bag of Words work?",
+        "What is BoW?",
+        "Why do we use Bag of Words?",
+        "Explain BoW",
+        "How is text converted into numbers?",
+        "How does NeuroBot convert text into features?"
+      ],
+      "responses": [
+        "Bag of Words converts text into numerical vectors based on the words appearing in the vocabulary. This allows a machine learning model to process text."
+      ]
+    },
+
+    {
+      "tag": "tfidf",
+      "patterns": [
+        "What is TF-IDF?",
+        "Explain TF-IDF",
+        "What does TF-IDF mean?",
+        "How does TF-IDF work?",
+        "Why is TF-IDF used in NLP?",
+        "What is term frequency inverse document frequency?",
+        "Is TF-IDF different from Bag of Words?"
+      ],
+      "responses": [
+        "TF-IDF is a text representation technique that gives more importance to words that are frequent in a document but less common across many documents."
+      ]
+    },
+
+    {
+      "tag": "intent",
+      "patterns": [
+        "What is intent?",
+        "What does intent mean in a chatbot?",
+        "Explain intent classification",
+        "What is user intent?",
+        "Why do chatbots use intents?",
+        "What is an intent in NLP?",
+        "How does NeuroBot identify what I want?",
+        "How does the chatbot classify questions?"
+      ],
+      "responses": [
+        "An intent represents what the user wants. For example, 'What is ANN?' can belong to the ann intent, while 'Hello' can belong to the greeting intent."
+      ]
+    },
+
+    {
+      "tag": "confidence",
+      "patterns": [
+        "What is confidence?",
+        "What does confidence mean in the chatbot?",
+        "Why does NeuroBot show confidence?",
+        "What is prediction confidence?",
+        "What does 90 percent confidence mean?",
+        "How does the chatbot calculate confidence?"
+      ],
+      "responses": [
+        "Confidence represents how strongly the classifier favors its predicted intent. A higher value means the model is more confident in that prediction."
+      ]
+    },
+
+    {
+      "tag": "chatbot",
+      "patterns": [
+        "What is a chatbot?",
+        "What is an AI chatbot?",
+        "How does a chatbot work?",
+        "Explain chatbot",
+        "How was NeuroBot built?",
+        "How does NeuroBot work?",
+        "What technology does NeuroBot use?",
+        "How does this chatbot answer questions?"
+      ],
+      "responses": [
+        "A chatbot is a software system that communicates with users through natural language. NeuroBot uses text processing, an ANN classifier, intent prediction, and predefined responses."
+      ]
+    },
+
+    {
+      "tag": "neurobot",
+      "patterns": [
+        "What is NeuroBot?",
+        "Tell me about NeuroBot",
+        "Who are you?",
+        "What can you do?",
+        "What can NeuroBot do?",
+        "What is your purpose?",
+        "What are you trained for?"
+      ],
+      "responses": [
+        "I'm NeuroBot, an ANN-powered learning assistant created to demonstrate AI concepts, NLP-based intent classification, and useful East West University information."
+      ]
+    },
+
+    {
+      "tag": "deep_learning",
+      "patterns": [
+        "What is deep learning?",
+        "Explain deep learning",
+        "What does deep learning mean?",
+        "How is deep learning different from machine learning?",
+        "Is ANN related to deep learning?",
+        "Why is deep learning important?"
+      ],
+      "responses": [
+        "Deep learning is a branch of machine learning that uses neural networks with multiple layers to learn complex patterns from data."
+      ]
+    },
+
+    {
+      "tag": "cnn",
+      "patterns": [
+        "What is CNN?",
+        "What does CNN stand for?",
+        "Explain convolutional neural network",
+        "What is a convolutional neural network?",
+        "Where are CNNs used?",
+        "How does CNN work?"
+      ],
+      "responses": [
+        "CNN stands for Convolutional Neural Network. CNNs are neural networks commonly used for processing images and other structured spatial data."
+      ]
+    },
+
+    {
+      "tag": "rnn",
+      "patterns": [
+        "What is RNN?",
+        "What does RNN stand for?",
+        "Explain recurrent neural network",
+        "What is a recurrent neural network?",
+        "Where are RNNs used?",
+        "How is RNN different from ANN?"
+      ],
+      "responses": [
+        "RNN stands for Recurrent Neural Network. RNNs are designed to process sequences where the order of information is important."
+      ]
+    },
+
+    {
+      "tag": "computer_vision",
+      "patterns": [
+        "What is computer vision?",
+        "Explain computer vision",
+        "How does AI understand images?",
+        "Where is computer vision used?",
+        "What is image recognition?",
+        "How do computers process images?"
+      ],
+      "responses": [
+        "Computer vision is an AI field focused on enabling computers to interpret and analyze visual information such as images and videos."
+      ]
+    },
+
+    {
+      "tag": "generative_ai",
+      "patterns": [
+        "What is generative AI?",
+        "Explain generative artificial intelligence",
+        "What does generative AI do?",
+        "How does generative AI work?",
+        "What are examples of generative AI?",
+        "How is generative AI different from traditional AI?"
+      ],
+      "responses": [
+        "Generative AI refers to systems that can create new content such as text, images, audio, or code based on patterns learned from data."
+      ]
+    },
+
+    {
+      "tag": "ai_ethics",
+      "patterns": [
+        "What is AI ethics?",
+        "Why is AI ethics important?",
+        "What are ethical issues in AI?",
+        "Can AI be biased?",
+        "What is AI bias?",
+        "Why should AI be responsible?"
+      ],
+      "responses": [
+        "AI ethics deals with responsible development and use of AI, including fairness, privacy, transparency, accountability, and avoiding harmful bias."
+      ]
+    },
+
+    {
+      "tag": "ewu_info",
+      "patterns": [
+        "Tell me about East West University",
+        "What is East West University?",
+        "What is EWU?",
+        "Tell me about EWU",
+        "Give me information about EWU",
+        "Give me an introduction to EWU",
+        "Tell me something about the university",
+        "I am a new EWU student",
+        "I am new at EWU",
+        "What should a new student know about EWU?",
+        "Give me a brief introduction to EWU",
+        "Can you introduce EWU?"
+      ],
+      "responses": [
+        "East West University (EWU) is a private university in Dhaka, Bangladesh. NeuroBot can help you explore information about EWU's academic programs, campus life, student services, career counseling, clubs, and other university resources."
+      ]
+    },
+
+    {
+      "tag": "ewu_location",
+      "patterns": [
+        "Where is EWU?",
+        "Where is East West University located?",
+        "Where is the EWU campus?",
+        "What is the location of EWU?",
+        "What is the address of East West University?",
+        "Where is the East West University campus?",
+        "Which area is EWU located in?",
+        "Where can I find EWU?",
+        "How can I find the EWU campus?",
+        "What is the EWU address?"
+      ],
+      "responses": [
+        "East West University's campus is located at A/2, Jahurul Islam Avenue, Jahurul Islam City, Aftabnagar, Dhaka-1212, Bangladesh."
+      ]
+    },
+
+    {
+      "tag": "ewu_programs",
+      "patterns": [
+        "What programs does EWU offer?",
+        "What subjects are available at EWU?",
+        "What can I study at EWU?",
+        "What undergraduate programs does EWU have?",
+        "What graduate programs does EWU offer?",
+        "What degrees are available at EWU?",
+        "Tell me about EWU programs",
+        "What departments does EWU have?",
+        "Which subjects can I study at East West University?",
+        "What academic programs are available?"
+      ],
+      "responses": [
+        "EWU offers undergraduate and graduate programs across different academic areas. You can explore the university's official program listings to find the program that matches your interests."
+      ]
+    },
+
+    {
+      "tag": "ewu_admission",
+      "patterns": [
+        "How can I apply to EWU?",
+        "How do I apply to East West University?",
+        "How can I get admission to EWU?",
+        "What is the EWU admission process?",
+        "Tell me about EWU admission",
+        "How does EWU admission work?",
+        "Where can I apply for EWU?",
+        "How do I become an EWU student?",
+        "What do I need for EWU admission?",
+        "Where can I find EWU admission information?"
+      ],
+      "responses": [
+        "EWU has an admission process for its undergraduate and graduate programs. For current requirements, deadlines, and application procedures, students should check the official EWU admission information because these details can change."
+      ]
+    },
+
+    {
+      "tag": "ewu_career",
+      "patterns": [
+        "Does EWU have career counseling?",
+        "Does East West University provide career counseling?",
+        "Tell me about career counseling at EWU",
+        "What is the Career Counseling Center?",
+        "What is EWU CCC?",
+        "What does the Career Counseling Center do?",
+        "What career services does EWU provide?",
+        "Where can I get career advice at EWU?",
+        "Where can EWU students get career guidance?",
+        "How can I get career guidance at EWU?",
+        "Does EWU provide career guidance?",
+        "Can EWU students get career advice?",
+        "Does EWU help students with careers?",
+        "How can EWU help me with my career?",
+        "Does EWU help with internships?",
+        "Does EWU provide internship support?",
+        "Does EWU help students find jobs?",
+        "Does EWU organize career workshops?",
+        "Does EWU organize job fairs?",
+        "Does EWU help with job preparation?"
+      ],
+      "responses": [
+        "Yes. EWU has a Career Counseling Center (CCC) under the Department of Students' Welfare. The CCC provides career guidance and supports students and graduates with areas such as internship placement, career searching, higher-study information, and career development.",
+        "Yes. EWU's Career Counseling Center connects students with career-development opportunities and supports internship and job preparation through counseling, workshops, seminars, networking, and related activities.",
+        "EWU's Career Counseling Center is designed to help students prepare for their professional careers, including internship placement, career searching, higher studies, and career development."
+      ]
+    },
+
+    {
+      "tag": "ewu_career_workshops",
+      "patterns": [
+        "Does EWU organize career workshops?",
+        "What career workshops does EWU offer?",
+        "Does EWU teach CV writing?",
+        "Does EWU provide interview training?",
+        "Are there interview workshops at EWU?",
+        "Can EWU students learn CV writing?",
+        "Does the CCC organize seminars?",
+        "Does EWU organize career seminars?",
+        "Are there job preparation workshops at EWU?",
+        "Does EWU provide corporate networking opportunities?"
+      ],
+      "responses": [
+        "Yes. EWU's Career Counseling Center organizes career-development activities such as workshops, seminars, job fairs, corporate presentations, internship-related activities, CV-writing sessions, interview preparation, and networking opportunities."
+      ]
+    },
+
+    {
+      "tag": "ewu_clubs",
+      "patterns": [
+        "What clubs does EWU have?",
+        "What student clubs are available at EWU?",
+        "Tell me about EWU clubs",
+        "Can I join a club at EWU?",
+        "Are there clubs at East West University?",
+        "What extracurricular activities are available at EWU?",
+        "What student organizations does EWU have?",
+        "How can I participate in EWU clubs?",
+        "What can I do outside classes at EWU?",
+        "Does EWU have student activities?"
+      ],
+      "responses": [
+        "Yes. EWU has a student club system supported by the Students' Welfare Department. The clubs provide opportunities for extracurricular activities, leadership, communication, experiential learning, volunteering, programming, research, seminars, workshops, and other student activities."
+      ]
+    },
+
+    {
+      "tag": "ewu_campus_life",
+      "patterns": [
+        "What is campus life like at EWU?",
+        "Tell me about campus life at EWU",
+        "What can students do at EWU?",
+        "What activities are available on campus?",
+        "What is student life like at EWU?",
+        "What facilities are available on campus?",
+        "What can I do outside my classes?",
+        "Does EWU have extracurricular activities?",
+        "How can I get involved in university life?",
+        "Tell me about EWU student life"
+      ],
+      "responses": [
+        "EWU's campus life includes extracurricular activities and student services supported by the Students' Welfare Department. The university highlights activities and facilities such as student activities, a common room, cafeteria, medical center, career counseling, and socio-psyche counseling."
+      ]
+    },
+
+    {
+      "tag": "ewu_student_welfare",
+      "patterns": [
+        "What is the Students Welfare Department?",
+        "What does student welfare do at EWU?",
+        "Tell me about EWU student welfare",
+        "What support does EWU provide to students?",
+        "Where can students get support at EWU?",
+        "What student services does EWU have?",
+        "How does EWU support students?",
+        "What does the Department of Students Welfare do?"
+      ],
+      "responses": [
+        "EWU's Department of Students' Welfare supports students in areas including career development, wellbeing, extracurricular activities, and broader student engagement."
+      ]
+    },
+
+    {
+      "tag": "ewu_counseling",
+      "patterns": [
+        "Does EWU provide counseling?",
+        "Does EWU have a counseling center?",
+        "Is counseling available at EWU?",
+        "Where can EWU students get counseling?",
+        "What is the Socio-Psyche Counselling Center?",
+        "Does EWU provide psychological counseling?",
+        "Can students receive counseling at EWU?",
+        "What support is available for student wellbeing?"
+      ],
+      "responses": [
+        "Yes. EWU has a Socio-Psyche Counselling Center that provides professional counseling and support for students dealing with academic, personal, emotional, behavioral, family, and relationship-related challenges."
+      ]
+    },
+
+    {
+      "tag": "ewu_library",
+      "patterns": [
+        "Does EWU have a library?",
+        "Tell me about the EWU library",
+        "What library facilities does EWU have?",
+        "Can EWU students access online journals?",
+        "Does EWU have ebooks?",
+        "What resources are available in the EWU library?",
+        "How can students use the EWU library?",
+        "What academic resources does EWU library provide?"
+      ],
+      "responses": [
+        "Yes. EWU provides library resources for students, including books, e-books, online journals, and other academic resources."
+      ]
+    },
+
+    {
+      "tag": "ewu_scholarship",
+      "patterns": [
+        "Does EWU offer scholarships?",
+        "Are scholarships available at EWU?",
+        "What scholarships does EWU provide?",
+        "Can I get a scholarship at EWU?",
+        "Does EWU provide financial assistance?",
+        "What financial aid is available at EWU?",
+        "Does EWU offer tuition waivers?",
+        "Are there merit scholarships at EWU?"
+      ],
+      "responses": [
+        "Yes. EWU provides scholarship and financial-assistance opportunities. Eligibility and current scholarship conditions can change, so students should check the latest official EWU information."
+      ]
+    },
+
+    {
+      "tag": "ewu_facilities",
+      "patterns": [
+        "What facilities does EWU have?",
+        "What facilities are available at EWU?",
+        "Tell me about EWU campus facilities",
+        "Does EWU have computer labs?",
+        "Does EWU have a medical center?",
+        "Does EWU have a cafeteria?",
+        "Does EWU have a common room?",
+        "What student facilities are available?"
+      ],
+      "responses": [
+        "EWU provides various academic and student facilities, including computer laboratories, library resources, internet access, a cafeteria, common room, medical center, and other student-support facilities."
+      ]
+    },
+
+    {
+      "tag": "ewu_contact",
+      "patterns": [
+        "How can I contact EWU?",
+        "What is the EWU phone number?",
+        "What is the EWU email?",
+        "How do I contact East West University?",
+        "What is the EWU admissions email?",
+        "What is the university contact information?",
+        "How can I contact EWU admissions?"
+      ],
+      "responses": [
+        "EWU's official website lists 09666775577 as a main contact number. It also lists admissions@ewubd.edu and info@ewubd.edu as university email addresses. For the latest contact details, check the official EWU website."
+      ]
+    },
+
+    {
+      "tag": "study_tips",
+      "patterns": [
+        "How can I study better?",
+        "Give me study tips",
+        "How can I prepare for exams?",
+        "How do I study effectively?",
+        "How can I improve my study habits?",
+        "Give me advice for university study",
+        "How can I manage my study time?"
+      ],
+      "responses": [
+        "Try breaking large topics into smaller sections, practicing regularly, reviewing difficult concepts, and keeping a consistent study schedule."
+      ]
+    },
+
+    {
+      "tag": "motivation",
+      "patterns": [
+        "I need motivation",
+        "Motivate me",
+        "I don't feel like studying",
+        "I am tired of studying",
+        "Give me some motivation",
+        "How can I stay motivated?",
+        "I am losing motivation"
+      ],
+      "responses": [
+        "Start with one small task instead of worrying about everything at once. A little progress is still progress.",
+        "Set a small goal, complete it, and then move to the next one. Consistency matters more than trying to do everything at once."
+      ]
+    },
+
+    {
+      "tag": "unknown",
+      "patterns": [
+        "I like pizza",
+        "I like burgers",
+        "Tell me a joke",
+        "Tell me a funny story",
+        "What is my favorite color?",
+        "Do you like music?",
+        "What movie should I watch?",
+        "Who is your favorite singer?",
+        "What should I eat?",
+        "I am bored",
+        "Tell me something random",
+        "Can you play a game?",
+        "Tell me a bedtime story",
+        "Do you like cats?",
+        "I want to travel",
+        "What is the best phone?",
+        "Tell me about cooking",
+        "What should I wear today?",
+        "Can you recommend a movie?",
+        "Tell me about football",
+        "What is the weather?",
+        "Tell me a story",
+        "Can you sing?",
+        "Do you play games?",
+        "What is your favorite food?",
+        "I love chocolate",
+        "Recommend a song",
+        "Who is the best football player?",
+        "What should I buy?",
+        "Tell me about celebrities"
+      ],
+      "responses": [
+        "I'm mainly designed to answer questions about AI, ANN, NLP, machine learning, and East West University.",
+        "That's outside my current knowledge area. Try asking me about AI, neural networks, NLP, or EWU.",
+        "I don't have enough knowledge about that topic yet. Try asking me something related to my knowledge base."
+      ]
+    }
+
+  ]
+}
